@@ -2,10 +2,10 @@ jwt:
     secret: jwtsecretkey
 spring:
     datasource:
-        password: password
+        password: root
         platform: mysql
-        url: jdbc:mysql://localhost/jwt?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
-        username: root
+        url: jdbc:postgresql://localhost:5432/simswap
+        username: postgres
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: none
